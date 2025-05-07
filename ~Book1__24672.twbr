@@ -1,0 +1,809 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20242.25.0325.1350                               -->
+<workbook original-version='18.1' source-build='2024.2.9 (20242.25.0325.1350)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='gold_aggregated_data' inline='true' name='federated.1c0cavl0m8wkin167fmi51qmjw73' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='gold_aggregated_data' name='textscan.1kn6dbb1psj2cw191j88a0w20wdv'>
+            <connection class='textscan' directory='C:/Users/injam/Desktop/BIGDATA' filename='gold_aggregated_data.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1kn6dbb1psj2cw191j88a0w20wdv' name='gold_aggregated_data.csv' table='[gold_aggregated_data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='type' ordinal='0' />
+            <column datatype='string' name='category' ordinal='1' />
+            <column datatype='integer' name='complaint_count' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1kn6dbb1psj2cw191j88a0w20wdv' name='gold_aggregated_data.csv' table='[gold_aggregated_data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='type' ordinal='0' />
+            <column datatype='string' name='category' ordinal='1' />
+            <column datatype='integer' name='complaint_count' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[gold_aggregated_data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[type]</local-name>
+            <parent-name>[gold_aggregated_data.csv]</parent-name>
+            <remote-alias>type</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[gold_aggregated_data.csv_F57FFBFDC94345F2B25291B9E74A2039]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[category]</local-name>
+            <parent-name>[gold_aggregated_data.csv]</parent-name>
+            <remote-alias>category</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[gold_aggregated_data.csv_F57FFBFDC94345F2B25291B9E74A2039]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>complaint_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[complaint_count]</local-name>
+            <parent-name>[gold_aggregated_data.csv]</parent-name>
+            <remote-alias>complaint_count</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[gold_aggregated_data.csv_F57FFBFDC94345F2B25291B9E74A2039]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='gold_aggregated_data.csv' datatype='table' name='[__tableau_internal_object_id__].[gold_aggregated_data.csv_F57FFBFDC94345F2B25291B9E74A2039]' role='measure' type='quantitative' />
+      <column caption='Category' datatype='string' name='[category]' role='dimension' type='nominal' />
+      <column caption='Complaint Count' datatype='integer' name='[complaint_count]' role='measure' type='quantitative' />
+      <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+      <column-instance column='[category]' derivation='None' name='[none:category:nk]' pivot='key' type='nominal' />
+      <group caption='Action (Category)' hidden='true' name='[Action (Category)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[category]' />
+        </groupfilter>
+      </group>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:category:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Asbestos&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Dead/Dying Tree&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Food Poisoning&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Illegal Posting&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;New Tree Request&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Plumbing&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Standing Water&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;BRONX&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Bus Stop Shelter Placement&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Elevator&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Highway Condition&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Lot Condition&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Sanitation Worker or Vehicle Complaint&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Tobacco or Non-Tobacco Sale&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Curb Condition&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Ferry Complaint&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Illegal Animal Sold&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Mobile Food Vendor&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Noise - Commercial&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Panhandling&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Sidewalk Condition&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;STATEN ISLAND&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Unsanitary Animal Facility&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;QUEENS&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;BEST/Site Safety&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Disorderly Youth&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;GENERAL&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Indoor Sewage&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Noise - House of Worship&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Scaffold Safety&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Street Sign - Damaged&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Violation of Park Rules&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Beach/Pool/Sauna Complaint&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Derelict Vehicles&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;For Hire Vehicle Complaint&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Illegal Tree Damage&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Noise&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Poison Ivy&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Traffic Signal Condition&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Uprooted Stump&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Animal in a Park&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Damaged Tree&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Ferry Inquiry&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Illegal Dumping&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Mold&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Pet Shop&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Smoking or Vaping&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Unsanitary Animal Pvt Property&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;HEAT/HOT WATER&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;Street Condition&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Building/Use&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;ELECTRIC&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Hazardous Materials&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Litter Basket Request&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Root/Sewer/Sidewalk Condition&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Taxi Compliment&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Wood Pile Remaining&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Abandoned Bike&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Commercial Disposal Complaint&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;ELEVATOR&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Highway Sign - Damaged&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Maintenance or Facility&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;OUTSIDE BUILDING&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Traffic&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Abandoned Vehicle&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;DOOR/WINDOW&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Dumpster Complaint&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Green Taxi Report&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;LinkNYC&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Noise - Street/Sidewalk&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Residential Disposal Complaint&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Tattooing&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Water System&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Animal-Abuse&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Day Care&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;FLOORING/STAIRS&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Illegal Fireworks&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Mosquitoes&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Plant&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Special Natural Area District (SNAD)&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Boilers&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;General Construction/Plumbing&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Illegal Parking&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Industrial Waste&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Noise - Park&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Radioactive Material&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Street Sign - Dangling&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;UNSANITARY CONDITION&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Water Conservation&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Bike Rack&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Bridge Condition&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Drinking Water&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Graffiti&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Obstruction&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Real Time Enforcement&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Street Sign - Missing&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;WATER LEAK&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Drinking&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;E-Scooter&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Harboring Bees/Wasps&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Litter Basket Complaint&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Rodent&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Taxi Complaint&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Wayfinding&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Bus Stop Shelter Complaint&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Electrical&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Investigations and Discipline (IAD)&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Lost Property&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;SAFETY&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Taxi Report&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Dirty Condition&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;For Hire Vehicle Report&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Incorrect Data&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;MANHATTAN&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Non-Residential Heat&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Posting Advertisement&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Unleashed Dog&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Urinating in Public&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Noise - Residential&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Unspecified&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;APPLIANCE&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Dead Animal&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Food Establishment&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Lead&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Municipal Parking Facility&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;PLUMBING&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Special Projects Inspection Team (SPIT)&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Unsanitary Pigeon Condition&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;BROOKLYN&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Construction Lead Dust&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Emergency Response Team (ERT)&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Homeless Person Assistance&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Non-Emergency Police Matter&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Overgrown Tree/Branches&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;School Maintenance&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Broken Parking Meter&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Drug Activity&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Green Taxi Complaint&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Outdoor Dining&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Recycling Basket Complaint&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Street Sweeping Complaint&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Water Quality&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Bench&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Bike/Roller/Skate Chronic&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Found Property&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Indoor Air Quality&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Noise - Helicopter&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Public Toilet&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Street Light Condition&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Vendor Enforcement&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;Blocked Driveway&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;Noise - Vehicle&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Air Quality&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Consumer Complaint&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Encampment&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Illegal Animal Kept as Pet&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Missed Collection&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;PAINT/PLASTER&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Sewer&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='gold_aggregated_data.csv' id='gold_aggregated_data.csv_F57FFBFDC94345F2B25291B9E74A2039'>
+            <properties context=''>
+              <relation connection='textscan.1kn6dbb1psj2cw191j88a0w20wdv' name='gold_aggregated_data.csv' table='[gold_aggregated_data#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='string' name='type' ordinal='0' />
+                  <column datatype='string' name='category' ordinal='1' />
+                  <column datatype='integer' name='complaint_count' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='gold_aggregated_data' name='federated.1c0cavl0m8wkin167fmi51qmjw73' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1c0cavl0m8wkin167fmi51qmjw73'>
+            <column caption='Category' datatype='string' name='[category]' role='dimension' type='nominal' />
+            <column caption='Complaint Count' datatype='integer' name='[complaint_count]' role='measure' type='quantitative' />
+            <column-instance column='[category]' derivation='None' name='[none:category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[complaint_count]' derivation='Sum' name='[sum:complaint_count:qk]' pivot='key' type='quantitative' />
+            <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1c0cavl0m8wkin167fmi51qmjw73].[Action (Category)]'>
+            <groupfilter function='level-members' level='[category]' user:ui-action-filter='[Action1_9770CC342B3D4AD6984BC816DADC2086]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1c0cavl0m8wkin167fmi51qmjw73].[none:type:nk]'>
+            <groupfilter function='member' level='[none:type:nk]' member='&quot;borough&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1c0cavl0m8wkin167fmi51qmjw73].[none:type:nk]</column>
+            <column>[federated.1c0cavl0m8wkin167fmi51qmjw73].[Action (Category)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1c0cavl0m8wkin167fmi51qmjw73].[none:category:nk]' />
+              <text column='[federated.1c0cavl0m8wkin167fmi51qmjw73].[sum:complaint_count:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1c0cavl0m8wkin167fmi51qmjw73].[sum:complaint_count:qk]</rows>
+        <cols>[federated.1c0cavl0m8wkin167fmi51qmjw73].[none:category:nk]</cols>
+      </table>
+      <simple-id uuid='{D9BE96B5-CCB7-49D8-B194-F7355A8B5B12}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='gold_aggregated_data' name='federated.1c0cavl0m8wkin167fmi51qmjw73' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1c0cavl0m8wkin167fmi51qmjw73'>
+            <column caption='Category' datatype='string' name='[category]' role='dimension' type='nominal' />
+            <column caption='Complaint Count' datatype='integer' name='[complaint_count]' role='measure' type='quantitative' />
+            <column-instance column='[category]' derivation='None' name='[none:category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[complaint_count]' derivation='Sum' name='[sum:complaint_count:qk]' pivot='key' type='quantitative' />
+            <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1c0cavl0m8wkin167fmi51qmjw73].[Action (Category)]'>
+            <groupfilter function='level-members' level='[category]' user:ui-action-filter='[Action1_9770CC342B3D4AD6984BC816DADC2086]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1c0cavl0m8wkin167fmi51qmjw73].[none:category:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([complaint_count])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:category:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1c0cavl0m8wkin167fmi51qmjw73].[none:type:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='MAX([category])' function='order' user:ui-marker='order'>
+                <groupfilter function='member' level='[none:type:nk]' member='&quot;complaint_type&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1c0cavl0m8wkin167fmi51qmjw73].[none:type:nk]</column>
+            <column>[federated.1c0cavl0m8wkin167fmi51qmjw73].[none:category:nk]</column>
+            <column>[federated.1c0cavl0m8wkin167fmi51qmjw73].[Action (Category)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1c0cavl0m8wkin167fmi51qmjw73].[sum:complaint_count:qk]' palette='red_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.1c0cavl0m8wkin167fmi51qmjw73].[sum:complaint_count:qk]' />
+              <color column='[federated.1c0cavl0m8wkin167fmi51qmjw73].[sum:complaint_count:qk]' />
+              <text column='[federated.1c0cavl0m8wkin167fmi51qmjw73].[none:category:nk]' />
+              <text column='[federated.1c0cavl0m8wkin167fmi51qmjw73].[sum:complaint_count:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{0FA6BA42-C6E5-44E5-972A-B8DE08A1C1EA}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='37'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1c0cavl0m8wkin167fmi51qmjw73].[none:type:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.1c0cavl0m8wkin167fmi51qmjw73].[none:category:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{ADD300DC-1FE4-4E97-BD84-2C97CC8DE839}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1c0cavl0m8wkin167fmi51qmjw73].[none:type:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.1c0cavl0m8wkin167fmi51qmjw73].[sum:complaint_count:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{024E0D78-6C9D-4838-B85E-EAFF7C1AE4C0}' />
+    </window>
+  </windows>
+</workbook>
